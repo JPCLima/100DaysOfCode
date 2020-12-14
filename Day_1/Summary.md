@@ -1,5 +1,10 @@
 # Day 1
 
+### Summary: 
+* Recap Flex-box
+* Mini Project using Flex-box
+
+### Notes: 
 Flexbox main Properties: 
     * display: flex | inline-flex;
     * flex-direction: row | column
