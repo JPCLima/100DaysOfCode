@@ -5,3 +5,7 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ## Day1:
 * Recap Flexbox
 * Mini Project using flex box
+
+## Day2:
+* Create navbars
+* Mini Project - Create vertical navabar
