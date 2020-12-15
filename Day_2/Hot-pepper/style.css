@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+
+:root {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    --text-primary: #141418;
+    --text-secondary: #ececec;
+    --bg-primary: #141416;
+    --bg-secondary: #484850;  
+    --transition-speed: 600ms;
+}
+
+* {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: #f25c54;
+}
+
+/* Main container */
+.container{
+    margin: 3rem;
+    padding: 2rem;  
+}
+
+/* Navbar */
+.navbar-nav{  
+    display: flex;    
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 3px 5%;
+    list-style: none;    
+}
+
+.nav-link{    
+    text-decoration: none;   
+}
+
+.nav-link .brand{
+    color: #f25c54;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+.nav-link i{
+    color: #f4845f;    
+}
+
+.nav-link .link-text{
+    font-weight: 700;    
+}
+
+
+.nav-link .fa-pepper-hot{
+    color: #f25c54;
+}
+
+button{
+    color: white;
+    padding: 9px 28px;
+    background-color: rgba(242, 92, 84, 1);
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(242, 92, 84, 0.8);    
+}
+
+button:focus{
+    outline: none;
+    box-shadow: none;    
+}
+
+/* Main */
+h1{
+    padding-bottom: 5%;
+}
+p{
+    text-align: justify;
+}
+
+/* Input */
+.input-seach{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 2rem;       
+}
+
+.input-seach i{
+    position: relative;
+    left: -40px;
+    color: #f25c54;
+    cursor: pointer;
+}
+.input-seach i:active{
+    transform: scale(0.98);
+}
+
+.input-seach input{
+    width: 20rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 6px 60px;
+    font-style: inherit; 
+    font-size: 18px;
+}
+
+.input-seach input:focus{
+    outline: none;
+    box-shadow: none;    
+}
+
+
+/* Article */
+
+
+
+
+
+
+
+/* Media */
+@media(max-width: 1000px){
+    .navbar-nav, .nav-links li{   
+        display: flex;     
+        flex-direction: column;
+        padding: 10%x;        
+        align-items: center;
+        justify-items: flex-start;        
+    }
+    button{
+        margin-top: 50px;
+    }
+
+    .nav-item:first-child{
+        margin-bottom: 50px;
+    }
+}

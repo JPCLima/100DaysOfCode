@@ -3,6 +3,7 @@
 ### Summary: 
 * Recap How to build Navbar
 * Mini Project create a left side navbar
+* Started to do the Hot-pper project
 
 Some tips to create navbars:
 * use tags haeder and nav
