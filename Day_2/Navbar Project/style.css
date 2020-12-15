@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+
+:root {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  --text-primary: #141418;
+  --text-secondary: #ececec;
+  --bg-primary: #141416;
+  --bg-secondary: #484850;  
+  --transition-speed: 600ms;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+main {
+  margin-left: 6rem;
+  padding: 1rem;
+}
+
+.navbar {
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);    
+      
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    height: 100%;       
+}
+
+.nav-item {
+    width: 100%;    
+}
+  
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link, .nav-logo  {
+    display: flex;
+    align-items: center;    
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;       
+  }
+
+.nav-link{
+    color: var(--text-secondary);
+    filter: grayscale(100%) opacity(0.7);    
+    
+}
+  
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    
+}
+
+.link-text {
+    display: none;
+    margin: 2rem;        
+}
+  
+.nav-item .nav-link i {    
+    color: #9546f0;
+    margin: 0 2rem;   
+}
+
+.nav-logo i{
+    margin: 0 2rem; 
+    transform: rotate(0deg);
+    transition: var(--transition-speed); 
+} 
+
+.nav-logo i:hover{
+    transform: rotate(-180deg);
+} 
+
+.nav-logo {   
+    background-color: #9cfc97;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-text{
+    font-size: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;    
+}
+
+
+
+.navbar:hover .link-text{    
+    display: flex;  
+    
+    transition: var(--transition-speed); 
+}
+
+
+
+
+  
