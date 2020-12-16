@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+
+:root {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif; 
+  --transition-speed: 600ms;
+}
+
+body {    
+    background-color: #1d3557;
+    display: flex;    
+	align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	min-height: 80vh;
+	margin: 0;
+}
+
+.card{
+    background-color: #f1faee;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    max-width: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+}
+
+.card-control{
+    padding: 10px;
+
+}
+
+.header {
+    color: #1d3557;
+    margin-bottom: 20px;    
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+h2  {
+    display: inline-block;    
+	margin: 0;
+}
+
+.game-container{
+   display: flex;
+   align-items: center;   
+   flex-direction: column;
+}
+
+
+.game-container .number-display{
+    color: #1d3557;
+    font-size: 5rem;
+}
+
+.game-container .number-score{    
+    color: #1d3557;
+    font-size: 1rem;
+}
+
+.game-container p{
+    position: relative;
+    top: -20px;
+}
+
+
+
+/* Buttons */
+.game-container .buttons .btn-up{
+    color: #e9c46a;
+    position: relative;
+    left: -50px;
+}
+
+.game-container .buttons .btn-down{
+    color: #e9c46a;
+    position: relative;
+    left: 50px;
+}
+
+/* Answer */
+.game-container .correct{
+    color: #2a9d8f;
+}
+
+.game-container .incorrect{
+    color: #e63946;
+}
+
+.game-container .answer{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
