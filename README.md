@@ -12,4 +12,4 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ## Day3:
 * Create tables in HTML and Style in CSS
-* Create a game guessing game
+* Create a game guessing number
