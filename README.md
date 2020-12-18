@@ -22,3 +22,6 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * Class methods
 * Class Iheritance
 * Method Chaining
+
+## Day5:
+* Create fun Seach tool
