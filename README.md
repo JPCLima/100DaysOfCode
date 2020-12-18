@@ -13,3 +13,12 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ## Day3:
 * Create tables in HTML and Style in CSS
 * Create a game guessing number
+
+## Day4:
+* Objects have properties & things they can do (methods)
+* Upadating Properties
+* Classes
+* Class Contructors
+* Class methods
+* Class Iheritance
+* Method Chaining
