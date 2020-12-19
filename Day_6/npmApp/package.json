@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "live-server"
   },
   "keywords": [],
   "author": "João Lima",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.3"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "live-server": "^1.2.1"
   }
 }
