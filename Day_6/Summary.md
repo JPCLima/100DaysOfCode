@@ -1,14 +1,15 @@
 # Day 6
 
-### Summary: 
+## Summary: 
 * Review Node Paakage Manager
   
+### 1. NPM
 
-### What is NPM?
+#### What is NPM?
 * Node Package Manager
 * Modules are JS libaries
 
-### Commands
+#### Commands:
 * Version: npm -v or npm --version
 * Help: npm or npm --help
 * Create the package: npm init
@@ -30,19 +31,18 @@
 * Get all the dependencies list, level 1: npm list --depth 0
 
 
-
-### What is Package.json Fie
+#### What is Package.json Fie?
 * Manifest file app info
 * Lists dependencies 
 * Specify if versions should update
 * Create NPM scripts
 * Easily create with "npm init"
 
-### How to install all the dependecies from the clone repo
+#### How to install all the dependecies from the clone repo?
 * npm install (its adding all the the modules in the dependencies in the package.json)
 * Install just the production dependencies: npm install --production
 
-### Semantic Version
+#### Semantic Version - in the package.json
 * First number: Major Version - Major changes, breaks API
 * Second number: Minor version - new features, does not break API
 * Third number: Path - bug fixes 
@@ -51,9 +51,21 @@
 * 4.17.4 in the dependencies: will install the current version without any update
 * '*' in the dependencies install the last version
 
-### Script in the package.json
+#### Script in the package.json
 * Change the test to "start": "node index.js"
 * To run the app use: npm start
 * Create a script with live server:
   * Install Live Server as --save-dev
   * in scripts add "server": "live-server"
+
+### 2. Async JS
+#### Callbacks
+* Passing a function callbacks means that function will wait until all the code above to be completed just after run the callback funtion
+
+#### Promesis 
+* Is an object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+*  Allows to associate handlers with an asynchronous action's eventual success value or failure reason
+*  Handel the erros with then and catch
+*  Promise.all to handel mutiple promises
+
+#### Aasync Await
