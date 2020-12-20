@@ -25,3 +25,10 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ## Day5:
 * Create fun Seach tool
+
+##Day6:
+* Review Node Package Manager
+* Async Js - callbaks, Promises, Async Await
+
+##Day 7:
+* Project Around the world using API to get the data
