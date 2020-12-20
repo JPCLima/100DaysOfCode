@@ -1,7 +1,8 @@
 # Day 6
 
 ## Summary: 
-* Review Node Paakage Manager
+* Review Node Package Manager
+* Async Js - callbaks, Promises, Async Await
   
 ### 1. NPM
 

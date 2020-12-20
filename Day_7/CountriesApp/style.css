@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+
+* {
+	box-sizing: border-box;
+}
+
+:root {	
+    --primary-color: #004e98;
+    --second-color: #ff6700;
+    --background-el: #fff;   
+    --font-color: #2b2d42;
+    --background: #fff;
+    --card-shadow-color: #004e98;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    color: var(--font-color);
+    background-color: var(--background);
+}
+
+/* Body dark */
+body.dark {
+	color: hsl(0, 0%, 100%);
+	--body: hsl(207, 26%, 17%);
+    --background-el: hsl(209, 23%, 22%);
+    --background: rgba(37, 37, 37, 0.993);
+    --card-shadow-color: #ff6700;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: var(--second-color);
+}
+
+/* Header */
+header{
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;   
+    padding: 20px;
+}
+
+h1, h3 {
+    margin: 0;       
+}
+
+img{
+    max-width:100%;
+}
+
+/* Plane */
+header i{
+    position: relative;
+    top: -50px;
+    left: -180px;
+    transform: rotate(-35deg);
+    margin: 0;
+    transition:  transform 0.3s;
+}
+
+header i.dark{
+    color: var(--second-color);
+    transform: rotate(35deg);
+    transition: 0.3s;
+}
+
+
+
+header i:hover{
+    color: var(--second-color)
+}
+
+
+/* Container */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1440px;
+    padding: 30px;
+    position: relative;
+}
+
+/* Search tool */
+.search{
+    background-color: var(--background-el);
+    border-radius: 5px;
+    border:none;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    color: inherit;
+    min-width: 300px;
+}
+
+.search::placeholder {
+	color: inherit;
+}
+
+input[type=text]:focus {    
+    outline: 2px solid var(--second-color);
+}
+
+
+/* Card */
+.card {
+    border-radius: 5px;
+    background-color: var(--background-el);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    overflow: hidden;
+    margin: 40px;
+    max-width: 100%;
+    width: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 1px 3px var(--card-shadow-color), 0 1px 2px var(--card-shadow-color);
+    background-color: #004f981a;
+}
+
+.card .card-body{
+    padding: 20px;
+}
+
+.card img {
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
