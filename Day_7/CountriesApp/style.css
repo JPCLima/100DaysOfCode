@@ -5,12 +5,12 @@
 }
 
 :root {	
-    --primary-color: #004e98;
-    --second-color: #ff6700;
+    --primary-color: #023047;
+    --second-color: #fb7305;
     --background-el: #fff;   
     --font-color: #2b2d42;
     --background: #fff;
-    --card-shadow-color: #004e98;
+    --card-shadow-color: #023047;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -27,7 +27,7 @@ body.dark {
 	--body: hsl(207, 26%, 17%);
     --background-el: hsl(209, 23%, 22%);
     --background: rgba(37, 37, 37, 0.993);
-    --card-shadow-color: #ff6700;
+    --card-shadow-color: #fb7305;
 }
 
 /* Scrollbar */

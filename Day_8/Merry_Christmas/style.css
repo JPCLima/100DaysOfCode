@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
+
+:root{
+    --primary-color: #1d3557;
+    --secondary-color: #e63946;
+    --container-color: #f1faee;
+    --btn-color: #2a9d8f;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+/* Container - card */
+.container{
+    background-color: var(--container-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+h2, h4, .xmas, .score {
+    margin: 0;    
+}
+
+/* Conatner - text display */
+.container .xmas {    
+    margin: 80px 0px;
+    font-size: 2rem;
+}
+
+/* Form */
+/* Form button */
+.form-control .btn{
+    background-color: var(--btn-color);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 0;
+    bottom: 0px;
+    position:relative;   
+    padding: 6px 20px;
+}
+
+.form-control .btn:hover{
+    background-color: #2a9d90a6;
+}
+/* input */
+.form-control .input{
+    color: inherit;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    position: relative;
+    width: 200px;   
+    padding: 5px 10px;    
+    font-size: 14px;
+}
+
