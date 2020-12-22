@@ -1,0 +1,31 @@
+<%- include('partials/head.ejs') %>
+
+
+    <h1>Topic: <%= topic %>
+    </h1>
+
+    <% for( let name of listNames ) { %>
+        <li>
+            <%= name %>
+        </li>
+        <% } %>
+
+            <h2>
+                <%= name %>
+            </h2>
+
+            <h3>
+                <%= description %>
+            </h3>
+
+            <p>Subscribers: <%= subscribers %>
+            </p>
+
+            <% for( let post of posts ) { %>
+                <li>
+                    <%= post.title %>
+                </li>
+                <% } %>
+
+
+                    <%- include('partials/footer.ejs') %>

@@ -26,3 +26,31 @@
 
 #### Run nodemon
 * To run nodemon replace the word node to nodemon -> nodemon index.js
+
+#### EJS
+* Install ejs:
+  * npm install ejs
+* Configure the app to acept ejs:
+  * app.set('views engine', 'ejs');
+* Create a views file
+
+#### Render the page on the home response
+  * res.render('home.ejs')
+
+#### Passing data to template:
+  * Create some values on the app.get as const
+  * On the render pass the number as object res.render('random.ejs', { rand: number })
+  * If the name key is equal to value just need a key res.render('random.ejs', { number })
+  * To call for the number we need to call for the key, in this case number
+  * Passing the params to template, its the same way as before, parsing value to object inside render
+
+#### EJS Serving Static files
+* Include the following: app.use(express.static(path.join(__dirname, 'public')));
+* Create a folder Public
+* Include the css file in the html file: href="/style.css" (!!important the / )
+
+
+#### Partials
+* Create a folder partials inside views
+* Create the partials files like header, footer, nav
+* in the HTML include this files <%- include('partials/head.ejs') %>

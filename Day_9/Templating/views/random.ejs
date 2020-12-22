@@ -1,0 +1,13 @@
+<%- include('partials/head.ejs') %>
+
+
+    <h1>Random number:
+        <span>
+            <%= number %>
+        </span>
+    </h1>
+
+    <h2>
+        <%= number%2===0 ? 'Even' : 'Odd' %>
+    </h2>
+    <%- include('partials/footer.ejs') %>

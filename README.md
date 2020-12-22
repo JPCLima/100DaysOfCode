@@ -33,9 +33,9 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ## Day 7:
 * Project Around the world using API to get the data
 
-# Day 8
+## Day 8
 * Create one more project using the DOM manipulation. This time an app for Christmas
 
-# Day 9
+## Day 9
 * Create a server using express
 * Create dynamic html with templating
