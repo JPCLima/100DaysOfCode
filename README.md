@@ -36,6 +36,6 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 # Day 8
 * Create one more project using the DOM manipulation. This time an app for Christmas
 
-# Day 
+# Day 9
 * Create a server using express
 * Create dynamic html with templating
