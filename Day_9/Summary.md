@@ -5,7 +5,7 @@
 
 
 ### 1. Express
-#### Initilaize NPM
+#### Initilaize NPM 
 * Initialize the npm: npm init -y
 * Install express: npm i express
 
