@@ -26,9 +26,16 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ## Day5:
 * Create fun Seach tool
 
-##Day6:
+## Day6:
 * Review Node Package Manager
 * Async Js - callbaks, Promises, Async Await
 
-##Day 7:
+## Day 7:
 * Project Around the world using API to get the data
+
+# Day 8
+* Create one more project using the DOM manipulation. This time an app for Christmas
+
+# Day 
+* Create a server using express
+* Create dynamic html with templating
