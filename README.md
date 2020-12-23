@@ -39,3 +39,7 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ### Day 9
 * Create a server using express
 * Create dynamic html with templating
+
+### Day 10
+* Practice DOM manipulation
+* Create a project LED paint
