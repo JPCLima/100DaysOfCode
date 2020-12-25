@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+body{
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+}
+
+/* Title */
+
+h1{
+    font-size: 5rem;
+}
+h1::before{
+    content: 'Before Before Before Before Before Before Before Before';
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    display: block;
+    
+}
+h1::after{
+    content: 'After After After After After After After After After After';
+    color: white;
+    display: block;
+    background-color: red;
+    font-size: 20px;
+}
+
+/* Section */
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 10%;    
+}
+
+/* blockquote */
+blockquote{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 2rem;
+    color: red;
+  }
+
+blockquote::after {
+  content: close-quote;
+  font-size: 2rem;
+    color: red;
+}
+
+/* data-tool-tip */
+a[data-tool-tip]::before {
+    position: relative;
+}
+
+a[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    display: block;
+    position: absolute;
+    background-color: rgba(100, 100, 100, 0.9);
+    padding: 1em 3em;
+    color: white; 
+    border-radius: 5px;
+    font-size: 0.75em;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: transform ease-out 200ms;
+}
+
+a[data-tool-tip]:hover::after{
+    transform: scale(1);
+}
+
+/* Toogles */
+.toggler::before{
+    content: "\25B6";
+    display: inline-block;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggler.active::before{
+    transform: rotate(90deg);
+}
+
+/* Acticles */
+article{
+    display: none;
+    padding: 20px;
+    background-color: rgba(100, 100, 100, 0.2);
+    border-radius: 15px;
+}
+
+article.active{
+    display: block;
+}

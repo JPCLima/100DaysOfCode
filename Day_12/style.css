@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    background-color:coral;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover{
+    transform: scale(1.1);
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.25);
+}
+
+.container-two{
+    display: flex;    
+    flex-direction: column;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+.container-two small{
+    padding: 0.5em;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+.container-three{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 5px red, inset 0 0 0 10px blue, inset 0 0 0 15px greenyellow;
+}
+
+
+/* Button */
+button{
+    padding: 2px 25px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
