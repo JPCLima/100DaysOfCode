@@ -1,7 +1,7 @@
 # Day 13
 
 ## Summary: 
-* Today Im studied how the absolute and relative position work
+* Position absolute and relative position work
 * Create a card usng the positions relative and absolute
 
 ### Position Absolute

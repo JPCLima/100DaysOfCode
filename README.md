@@ -43,3 +43,13 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ### Day 10
 * Practice DOM manipulation
 * Create a project LED paint
+
+### Day 11
+* Before & After
+
+### Day 12
+* Study how Box-shadow work
+
+### Day 13
+* Position absolute and relative position work
+* Create a card usng the positions relative and absolute
