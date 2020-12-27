@@ -53,3 +53,7 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ### Day 13
 * Position absolute and relative position work
 * Create a card usng the positions relative and absolute
+
+### Day 14
+* Display: Flexbox
+* Display: Grid

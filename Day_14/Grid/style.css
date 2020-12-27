@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+body{
+    background-color:#2F4858;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#F6AE2D; 
+    border: 2px solid #33658A;   
+    color: #2F4858;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.25);
+}
+
+.grid-item-1::before, .grid-item-2::before, .grid-item-3::before, 
+.grid-item-4::before, .grid-item-5::before, .grid-item-6::before{
+    font-size: 40px;
+    padding: 20px;
+}
+.grid-item-1::before{
+    content: "Item 1";
+
+}
+.grid-item-2::before{
+    content: "Item 2";
+}
+.grid-item-3::before{
+    content: "Item 3";
+}
+.grid-item-4::before{
+    content: "Item 4";
+
+}
+.grid-item-5::before{
+    content: "Item 5";
+}
+.grid-item-6::before{
+    content: "Item 6";
+}
+
+/* Grid */
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px, auto);    
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.grid-item-1{   
+    display: flex;    
+    justify-content: flex-end;
+    grid-column: span 2;
+}
+
+.grid-item-1:active{       
+    grid-column: span 1;
+}
+
+.grid-item-2{
+    display: flex;    
+    align-items: flex-end;
+    grid-row: span 2;
+}
+
+.grid-item-2:active{       
+    grid-column: span 2;
+}
+
+.grid-item-3{
+    grid-column: span 1;
+}
+
+.grid-item-4{
+    grid-column: span 1;
+}
+.grid-item-5{
+    grid-column: span 1;
+}
+.grid-item-6{
+    grid-column: span 1;
+}
+.grid-item-6:active{       
+    grid-column: span 2;
+}
