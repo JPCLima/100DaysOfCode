@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="left-container">
+            <h1>GET Request</h1>
+            <form action="http://localhost:3000/tasks" method="GET" class="from-control">
+                <input type="text" name="task">
+                <input type="number" name="priority">
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="right-container">
+            <h1>POST Request</h1>
+            <form action="http://localhost:3000/tasks" method="POST" class="from-control">
+                <input type="text" name="task">
+                <input type="number" name="priority">
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

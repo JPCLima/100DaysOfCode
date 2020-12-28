@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#e5e5e5;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;  
+    margin: 0;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+h1{
+    color: #fca311;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.welcome{
+    color: #fff;
+}
+
+h3 {margin: 50px 0px;}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(250px, auto);    
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left-container {     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;    
+}
+
+.left-container::before, .new-task-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fca311; 
+    z-index: -1;
+ }
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul{      
+    display: flex;  
+    flex-direction: column;  
+    padding: 2rem;  
+}
+
+
+li{
+    color: black;    
+    margin: 0;
+    list-style-type: none;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* Button */
+button{
+    background-color: white;
+    padding: 5px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 7px 0;
+}
+
+button:active{
+   transform: scale(0.98);
+   box-shadow: 0 0 5px 0;
+}
+
+button:focus, input:focus, textarea:focus{
+   outline: none;}
+
+/* New Tasks */
+.new-task-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 2rem;
+    text-align: center;    
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 40px;
+}
+
+label{
+    margin: 10px;
+    font-weight: bold;
+}
+
+input{
+    padding:  5px 20px;
+    font-size: 14px;
+    border-radius: 10px;    
+    border: none;
+}
+
+textarea{
+    border-radius: 10px;;
+    width: 200px;
+    padding: 5px 10px;
+}

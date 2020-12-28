@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="new-task-container">
+            <h1 class="welcome">New Task</h1>
+            <form action="/tasks" class="form-control" method="POST">
+                <label for="task">Task</label>
+                <input type="text" name="task" id="task" placeholder="type your task">
+                <label for="priority">Priority</label>
+                <input type="number" name="priority" id="priority" placeholder="type your priority">
+                <label for="details">Details</label>
+                <textarea name="details" id="details" cols="25" rows="5" placeholder="type your details"></textarea>
+                <br>
+                <button>Submit</button>
+            </form>
+
+        </div>
+        <div class="right-container">
+            <h1>Tasks</h1>
+            <ul>
+                <% for( let t of tasks ) { %>
+                    <li>
+                        <a href="/tasks/<%= t.id %>">
+                            <%= t.task %>
+                        </a>
+                    </li>
+
+                    <% } %>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

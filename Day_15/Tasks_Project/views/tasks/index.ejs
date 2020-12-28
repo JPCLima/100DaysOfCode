@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="left-container">
+            <h1 class="welcome">Welcome TODO App</h1>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur delectus, non maiores quia,
+                eligendi aut eveniet enim, obcaecati aperiam culpa labore eaque expedita nam nemo temporibus? Fugit
+                architecto odit doloremque!</h3>
+
+        </div>
+        <div class="right-container">
+            <h1>Tasks</h1>
+            <ul>
+                <% for( let t of tasks ) { %>
+                    <li>
+                        <a href="/tasks/<%= t.id %>">
+                            <%= t.task %>
+                        </a>
+                    </li>
+
+                    <% } %>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

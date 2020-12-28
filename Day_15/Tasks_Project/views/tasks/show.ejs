@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="left-container">
+            <h1 class="welcome">
+                <%= task_details.task %>
+            </h1>
+            <h4>P<%= task_details.priority %>
+            </h4>
+            <h3>
+                <%= task_details.details %>
+            </h3>
+
+            <button><a href="/tasks">Main Menu</a></button>
+        </div>
+        <div class="right-container">
+            <h1>Tasks</h1>
+            <ul>
+                <% for( let t of tasks ) { %>
+                    <li>
+                        <a href="/tasks/<%=t.id%>">
+                            <%= t.task %>
+                        </a>
+                    </li>
+
+                    <% } %>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
