@@ -14,16 +14,30 @@
             <h1 class="welcome">
                 <%= task_details.task %>
             </h1>
-            <h4>P<%= task_details.priority %>
-            </h4>
-            <h3>
-                <%= task_details.details %>
-            </h3>
+            <div class="container-details">
+                <strong>Priority:</strong>
+                <p>
+                    P<%= task_details.priority%>
+                </p>
+                <strong>Details:</strong>
 
-            <button><a href="/tasks">Main Menu</a></button>
+                <p>
+                    <%=task_details.details%>
+                </p>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn"><a href="/tasks">Main Menu</a></button>
+                <form method="POST" action="/tasks/<%=task_details.id%>?_method=DELETE">
+                    <button class="btn">Delete</button>
+                </form>
+                <button class="btn" id="submit"><a href="/tasks/<%=task_details.id%>/edit">Edit</a></button>
+            </div>
+
+
         </div>
         <div class="right-container">
-            <h1>Tasks</h1>
+            <h1>Tasks<a href="/tasks/new" class="plus">+</a></h1>
             <ul>
                 <% for( let t of tasks ) { %>
                     <li>

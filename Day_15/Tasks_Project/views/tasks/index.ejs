@@ -12,13 +12,16 @@
     <div class="grid-container">
         <div class="left-container">
             <h1 class="welcome">Welcome TODO App</h1>
-            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur delectus, non maiores quia,
-                eligendi aut eveniet enim, obcaecati aperiam culpa labore eaque expedita nam nemo temporibus? Fugit
-                architecto odit doloremque!</h3>
+            <p>
+                <%= time %>
+            </p>
+            <div class="counter">
+                Task to be done: <%= Object.keys(tasks).length %>
+            </div>
 
         </div>
         <div class="right-container">
-            <h1>Tasks</h1>
+            <h1>Tasks<a href="/tasks/new" class="plus">+</a></h1>
             <ul>
                 <% for( let t of tasks ) { %>
                     <li>

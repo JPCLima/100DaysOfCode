@@ -11,13 +11,15 @@ body{
     margin: 0;
 }
 
-h1, h3 {
-    margin: 0;
-}
-
 h1{
+    margin: 0;
     color: #fca311;
 }
+
+p{
+    color: white;
+}
+
 
 a{
     color: black;
@@ -28,7 +30,18 @@ a{
     color: #fff;
 }
 
-h3 {margin: 50px 0px;}
+.counter{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    width: 65%;
+    border-radius: 10px;;
+}
+
+h3 {margin: 20px 0px;}
 
 .grid-container{
     display: grid;
@@ -59,7 +72,27 @@ h3 {margin: 50px 0px;}
     z-index: -1;
  }
 
+
+/* Left container */
+.plus{
+    margin-left: 10px;
+    background-color:#fca311;
+    color: white;       
+    padding: 0px 5px;
+    border-radius: 20%;
+    cursor: pointer;
+    box-shadow: 0 0 7px 0 black;
+}
+
+.plus:active{
+    padding: 0 3px;
+    background-color:#fca211ce;
+    box-shadow: 0 0 4px 0 black;
+}
+
 .right-container{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,10 +100,11 @@ h3 {margin: 50px 0px;}
 
 }
 
-ul{      
+ul{ 
+    padding: 30px 0;
+    margin: 0;     
     display: flex;  
-    flex-direction: column;  
-    padding: 2rem;  
+    flex-direction: column;   
 }
 
 
@@ -83,7 +117,7 @@ li{
 }
 
 /* Button */
-button{
+.btn{
     background-color: white;
     padding: 5px 20px;
     font-size: 1rem;
@@ -92,12 +126,12 @@ button{
     box-shadow: 0 0 7px 0;
 }
 
-button:active{
+.btn:active{
    transform: scale(0.98);
    box-shadow: 0 0 5px 0;
 }
 
-button:focus, input:focus, textarea:focus{
+.btn:focus, input:focus, textarea:focus, .btn-cancel:focus{
    outline: none;}
 
 /* New Tasks */
@@ -131,7 +165,52 @@ input{
 }
 
 textarea{
+    font-family: inherit;
     border-radius: 10px;;
     width: 200px;
     padding: 5px 10px;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+.btn-cancel{
+    background-color: #d48b14;
+    border: none;
+    color: rgb(49, 49, 49, 0.5);   
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 10px;    
+}
+
+.btn-cancel:active{
+    background-color: #d48b14;
+    border: none;
+    color: rgb(49, 49, 49,1);   
+    border-radius: 10px;
+    transform: scale(0.95);
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 10px;    
+}
+
+
+
+/* Show */
+.container-details{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+p{
+    text-align: left;
 }

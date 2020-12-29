@@ -57,7 +57,10 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ### Day 14
 * Display: Flexbox
 * Display: Grid
-* 
+  
 ### Day 15
 * RESTfull
-* TODO app to use the methods GET, POST
+* TODO app to use the methods GET and POST
+
+### Day 16
+* TODO app to use the methods PATCH and DELETE
