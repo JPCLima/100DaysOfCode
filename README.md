@@ -64,3 +64,7 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ### Day 16
 * TODO app to use the methods PATCH and DELETE
+
+## Day 17
+* CSS Positions
+* 
