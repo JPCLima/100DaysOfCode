@@ -9,27 +9,64 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: black;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: #fd624a;
+}
+
+/* General Styling */
+
+ul,
 nav{
     list-style: none;    
 }
+
+
 
 a{   
     cursor: pointer; 
     color: white;
     text-decoration: none;    
 }
-
-a:hover{
-    opacity: 0.5;
+/* Logo */
+header h2 a{
+    color: #fd624a;
 }
+
+nav li a{
+    cursor: pointer;
+    color: white;
+}
+
+nav li a:hover{   
+    border-bottom: 2px solid #fd624a;
+}
+
 
 a.btn {
     border-radius: 4px;
-    color: #ffc20f;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    background-color: #403104;
+    background-color:#fd624a;
+}
+
+hr {
+    border: 0;
+    margin: 20px;
+    height: 1px;
+    width: 100%;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 /* Header */
@@ -42,6 +79,12 @@ header{
     padding: 35px 100px 0;
     animation: 1s fadein 0.3s forwards;
     opacity: 0;
+}
+
+@media (max-width: 800px){
+    header{
+        flex-direction: column;
+    }
 }
 
 /* Section */
@@ -117,3 +160,167 @@ header nav li{
         margin-top: 0;
     }
 }
+
+@media (max-width: 800px){
+    section {
+        padding: 50px 20px;
+    }
+}
+
+/* SomeTaskes Section */
+p{
+    text-align: center;
+    padding-bottom:50px;
+}
+
+.grid li{
+    cursor: pointer;
+    height: 350;    
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(50%); 
+    transition: transform 0.2s ease-in-out;
+}
+
+.grid li:hover{
+    opacity: 0.98;
+    transform: scale(1.001); 
+    filter: grayscale(0%);  
+    
+}
+
+.tastes .grid {
+    display: grid;
+    grid-template-columns: 440px 440px;
+    grid-auto-rows: minmax(280px, auto);    
+    grid-gap: 30px;
+    justify-content: center;
+    align-content: center;     
+}
+
+.grid-item-1{       
+    grid-column: span 2;
+}
+.grid-item-2{       
+    grid-column: span 1;
+    
+}
+.grid-item-3{       
+    grid-row: span 2;
+}
+.grid-item-4{       
+    grid-column: span 1;
+}
+
+@media (max-width: 800px){
+
+    .tastes .grid {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-auto-rows: minmax(280px, auto);    
+        justify-content: center;
+        align-content: center;     
+    }
+
+    .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4{
+        grid-column: span 4;
+    };
+}
+
+
+
+/* Testimonials */
+.testimonials{
+    background-color: black;
+    color: white;
+    padding: 0px 50px;
+    padding-top: 50px;
+}
+
+.testimonials .quote{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 40px 0 25px;
+}
+
+.author{
+    color: #fd624a;
+    opacity: 0.9;
+}
+
+/* Contact */
+
+.contact{
+    background-color:#fd624a;
+    color: black;
+}
+
+.form-control{
+    display: flex;
+}
+
+.btn-sub{
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.input{
+    width: 400px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+@media (max-width: 800px){
+    .form-control{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Footer */
+footer{
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white ;
+    padding: 20px 0;
+}
+
+footer ul{
+    display: flex;    
+}
+
+footer ul li{
+    margin-left: 16px;
+}
+
+.company-name, footer p{
+    padding: 0;    
+    font-size: 14px;
+    opacity: 0.6;
+    align-self: center;
+}
+
+.fab{
+    color: #ff725c;
+    
+}
+
+.fab:hover{
+    color: white;
+    opacity: 1;
+}
+
+/* Media */
