@@ -60,6 +60,7 @@ a.btn {
     background-color:#fd624a;
 }
 
+
 hr {
     border: 0;
     margin: 20px;
@@ -86,6 +87,82 @@ header{
         flex-direction: column;
     }
 }
+
+/* Modal */
+.container-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.show-modal{
+    cursor: pointer;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hidden{
+   display: none;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+textarea{
+    border: 1px solid #111;
+    margin: 10px 0;
+    font-family: inherit;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.input_contact{
+    border: 1px solid #111;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-sub{
+    width: 50%;
+    border-radius: 4px;
+    color: #fd624a;
+    text-transform: uppercase;
+    text-align: center;
+    background-color:#fd624a;
+}
+
 
 /* Section */
 
@@ -227,6 +304,7 @@ p{
         grid-column: span 4;
     };
 }
+
 
 
 

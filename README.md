@@ -71,3 +71,6 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ## Day 18
 * Project Startup Coffee
+* 
+## Day 20
+* Learn how to create a Modal window

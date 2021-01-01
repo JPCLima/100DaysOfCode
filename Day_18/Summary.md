@@ -1,4 +1,4 @@
 # Day 18
 
-# Summary:
+## Summary:
 * Project Startup Coffee

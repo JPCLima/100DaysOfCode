@@ -30,7 +30,7 @@
         <div class="content-area">
             <h1>Coffee Experience</h1>
             <h3>A mathematician is a device for turning coffee into theorems</h3>
-            <a href="#" class="btn">Contact Us Now</a>
+            <a href="#" class="btn show-modal">Contact Us Now</a>
         </div>
     </section>
 
@@ -48,6 +48,25 @@
 
         </ul>
     </section>
+
+
+    <!-- Modal -->
+    <div class="modal hidden">
+        <div class="container-contact">
+
+            <button class="close-modal">&times;</button>
+            <h1>Contact Us</h1>
+            <br>
+            <input class="input_contact" type="email" placeholder="Email" id="email">
+            <textarea name="" id="msg" cols="40" rows="10"></textarea>
+            <a href="#" class="btn-sub">Send</a>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+
+
+    <!-- Testimonials -->
 
     <section class="testimonials">
         <h3 class="title"> Testimonials from our coffee</h3>
@@ -97,6 +116,8 @@
 
     </footer>
 
+
+    <script src="app.js"></script>
 </body>
 
 </html>
