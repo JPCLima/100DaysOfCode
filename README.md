@@ -77,3 +77,10 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ## Day 20
 * Pig Game
+
+## Day 21
+* Arrays Destructuring
+* Objects Destructuring
+* The Spread Operator (...)
+* Rest pattern and parameters
+* Short Circuiting (&& and ||)
