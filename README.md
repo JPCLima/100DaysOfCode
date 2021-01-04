@@ -84,3 +84,9 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * The Spread Operator (...)
 * Rest pattern and parameters
 * Short Circuiting (&& and ||)
+
+## Day 22
+* For Loop
+* Enhanced Object Literals
+* Optional Chaining
+* Sets
