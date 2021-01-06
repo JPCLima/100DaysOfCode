@@ -2,6 +2,7 @@
 
 ## Summary: 
 * Maps
+* Stings
 
 
 ## Whitch Data Structure to Use?

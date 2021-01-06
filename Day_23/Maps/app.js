@@ -202,4 +202,37 @@ const capitalizeV2 = function (name) {
 }
 
 const newPassenger = 'Joao pedro costa Lima';
-capitalizeV2(newPassenger); 1
+capitalizeV2(newPassenger);
+
+// Padding 
+const message = 'Go to gate 23!';
+console.log(message.padStart(25, '+').padEnd(35, '+'));
+
+const maskCreditCard = function (number) {
+    const str = number + '';
+    const last = str.slice(-4);
+    return last.padStart(str.length, '*');
+}
+
+console.log(maskCreditCard(4331221565465));
+console.log(maskCreditCard('4331221562021'));
+
+// Reapeat
+const repeatMsg = function (msg, times) {
+    console.log(msg.repeat(times));
+}
+
+repeatMsg('this is a msg to reapeat!!! ', 6);
+
+// Challenge
+const textTransform = function (listNames) {
+    for (const [i, row] of listNames.entries()) {
+        const lowerCaseNames = row.toLowerCase().trim();
+        const [first, second] = lowerCaseNames.split('_');
+        const nameFormat = (first + second[0].toUpperCase() + second.slice(1)).padEnd(25, ' ');
+        const arrows = '✅'.repeat(i);
+        console.log(nameFormat + arrows);
+    }
+}
+
+textTransform(['underscore_case', '   first_name', '   Some_Variable', '   calculate_AGE', '  delayed_departure']);

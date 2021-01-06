@@ -90,3 +90,12 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * Enhanced Object Literals
 * Optional Chaining
 * Sets
+
+## Day 23
+* Maps
+* Strings
+
+## Day 24
+* Default Parameters
+* Parsing Arguments
+* First class and Hight-Order Functions
