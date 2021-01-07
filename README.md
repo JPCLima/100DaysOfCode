@@ -99,3 +99,8 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * Default Parameters
 * Parsing Arguments
 * First class and Hight-Order Functions
+
+## Day 25
+* Doing the course of freeCodeCamp:
+  * Flex-box
+  * Grid
