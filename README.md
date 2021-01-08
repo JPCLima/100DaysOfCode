@@ -104,3 +104,6 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * Doing the course of freeCodeCamp:
   * Flex-box
   * Grid
+
+## Day 26
+* Change rgba project
