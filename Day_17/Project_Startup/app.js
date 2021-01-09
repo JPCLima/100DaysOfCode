@@ -3,6 +3,8 @@ const overlay = document.querySelector('.overlay');
 const btnClose = document.querySelector('.close-modal');
 const btnsOpen = document.querySelector('.show-modal');
 
+const faders = document.querySelectorAll('.fade-in');
+
 
 // Function to close the modal
 function closeModal() {
@@ -34,4 +36,29 @@ document.addEventListener('keydown', (e) => {
             closeModal();
         }
     }
+})
+
+// Faders
+const appearOptions = {
+    threshold: 1
+};
+
+const appearOnScroll = new IntersectionObserver(
+    function (
+        entries,
+        appearOnScroll
+    ) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('appear');
+                appearOnScroll.unobserve(entry.target);
+            }
+        })
+    },
+    appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
 })
