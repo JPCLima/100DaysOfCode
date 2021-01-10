@@ -154,3 +154,81 @@ const addTaxRate = function (rate) {
 
 const addVAT2 = addTaxRate(0.23);
 console.log(addVAT2(250));
+
+// IIFE
+const runOnce = function () {
+    console.log('This will run again')
+}
+
+runOnce();
+
+// Immediately Involked function expression
+(function () {
+    console.log('This will never run again');
+    //const isPriv = 20;
+})();
+
+(() => console.log('This will never run again'))();
+
+
+{
+    const isPriv = 20;
+}
+
+// Closers
+const secureBooking = function () {
+    let passengerCount = 0;
+
+    return function () {
+        passengerCount++;
+        console.log(`${passengerCount} passengers`)
+    }
+}
+
+const booker = secureBooking();
+booker();
+booker();
+booker();
+console.dir(booker);
+
+// Examples closures
+// Example 1
+let f;
+
+const g = function () {
+    const a = 20;
+    f = function () {
+        console.log(a * 2);
+    }
+}
+
+const h = function () {
+    const b = 111;
+    f = function () {
+        console.log(b * 2);
+    }
+}
+
+// The close is a
+g();
+f();
+console.dir(f);
+
+// The close is b
+h();
+f();
+console.dir(f);
+
+// Example 2
+const boardPassengers = function (n, wait) {
+    const perGroup = n / 3;
+
+    setTimeout(function () {
+        console.log(`We are now bording all ${n} passengers`)
+        console.log(`There are 3 groups, each with ${perGroup} passengers`)
+    }, wait * 1000)
+
+    console.log(`Will start boarding in ${wait} seconds`)
+}
+
+boardPassengers(180, 3);
