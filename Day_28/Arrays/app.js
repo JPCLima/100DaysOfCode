@@ -61,17 +61,33 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const displayMovements = function (movs) {
+    containerMovements.innerHTML = '';
+
+    movs.forEach(function (mov, i) {
+        const type = mov > 0 ? 'deposit' : 'withdrawal';
+
+        const html = `
+        <div class="movements__row">
+          <div class="movements__type movements__type--${type}">${i + 1
+            } ${type}</div>
+          <div class="movements__value">${mov}€</div>
+        </div>
+      `;
+
+        containerMovements.insertAdjacentHTML('afterbegin', html);
+    });
+};
+displayMovements(account1.movements);
+
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
 
-const currencies = new Map([
-    ['USD', 'United States dollar'],
-    ['EUR', 'Euro'],
-    ['GBP', 'Pound sterling'],
-]);
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 // Arrays 
 // SLICE
@@ -83,5 +99,51 @@ console.log(arr.slice(-1));
 console.log(arr.slice(1, -2));
 console.log(arr.slice());
 
-// SPLICE
-console.log(arr.splice(2));
+// SPLICE(index, deleteCount)
+console.log('Splice:\n')
+arr.splice(1, 0);
+console.log(arr)
+
+// REVERSE --> mutate the original array
+console.log(arr.reverse());
+console.log(arr);
+
+// CONCAT
+const arr2 = ['f', 'g', 'h', 'i']
+const letters = arr.concat(arr2);
+const spreadMeathod = [...arr, ...arr2];
+console.log(letters);
+console.log(spreadMeathod);
+
+// JOIN 
+console.log(letters.join(' - '));
+
+// LOOP ARRAYS: forEach((item, index, array) 
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+movements.forEach((item, index, array) => {
+    if (item > 0) {
+        console.log(`You deposited ${item}`);
+    } else {
+        console.log(`You withdrew ${Math.abs(item)}`);
+    }
+})
+
+// LOOP MAP and SET: forEach((item, index, array) 
+const currencies = new Map([
+    ['USD', 'United States dollar'],
+    ['EUR', 'Euro'],
+    ['GBP', 'Pound sterling'],
+]);
+
+currencies.forEach((value, key, map) => {
+    console.log(`${value} ${key}`);
+})
+
+// Set
+const currenciesUnique = new Set(['USD', 'EUR', 'GBP']);
+console.log(currenciesUnique);
+
+currenciesUnique.forEach((value, _, map) => {
+    console.log(`${value} ${map}`);
+})
