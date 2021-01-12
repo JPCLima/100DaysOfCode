@@ -110,3 +110,22 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ## Day 27
 * Change rgba project
+
+## Day 28
+* Immediately Invoked Function Expressions (IIFE)
+* Closure
+
+## Day 29
+* Array:
+  * Slice
+  * Splice
+  * Reverse
+  * Conacat 
+  * Join
+* forEach
+  * Arrays
+  * Map
+  * Set
+
+## Day 30
+* Create first project for freeCodeCamp
