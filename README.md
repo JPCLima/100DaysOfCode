@@ -129,3 +129,7 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ## Day 30
 * Create first project for freeCodeCamp
+
+## Day 31
+* Review some theory of Javascript
+* Start to read a book "The definitive Guide" 
