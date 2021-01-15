@@ -80,16 +80,35 @@ const displayMovements = function (movs) {
 };
 displayMovements(account1.movements);
 
+const user = 'Steven Thomas Williams'; // SDW
+
+const calcDisplayBalance = function (movements) {
+    const balance = movements.reduce((acc, cur) => acc + cur, 0);
+    labelBalance.textContent = `${balance}€`;
+};
+calcDisplayBalance(account1.movements);
+
+const createUserNames = function (accs) {
+    accs.forEach(acc => {
+        acc.username = acc.owner
+            .toLowerCase()
+            .split(' ')
+            .map(name => name[0])
+            .join('');
+    })
+}
+createUserNames(accounts);
+console.log(accounts);
+
+
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+/*
 
-
-
-// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-
-// Arrays 
+// Arrays
 // SLICE
 let arr = ['a', 'b', 'c', 'd', 'e'];
 
@@ -115,10 +134,10 @@ const spreadMeathod = [...arr, ...arr2];
 console.log(letters);
 console.log(spreadMeathod);
 
-// JOIN 
+// JOIN
 console.log(letters.join(' - '));
 
-// LOOP ARRAYS: forEach((item, index, array) 
+// LOOP ARRAYS: forEach((item, index, array)
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 movements.forEach((item, index, array) => {
@@ -129,7 +148,7 @@ movements.forEach((item, index, array) => {
     }
 })
 
-// LOOP MAP and SET: forEach((item, index, array) 
+// LOOP MAP and SET: forEach((item, index, array)
 const currencies = new Map([
     ['USD', 'United States dollar'],
     ['EUR', 'Euro'],
@@ -147,3 +166,39 @@ console.log(currenciesUnique);
 currenciesUnique.forEach((value, _, map) => {
     console.log(`${value} ${map}`);
 })
+
+// Map
+const euroToUsd = 1.1;
+
+const movementsUSD = movements.map(mov => mov * euroToUsd);
+
+console.log(movements);
+console.log(movementsUSD);
+
+const movementDesc = movements.map((mov, index) => {
+    return `Movement ${index} - ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(mov)}`;
+});
+
+console.log(movementDesc);
+
+// Filter
+const deposits = movements.filter(function (mov) {
+    return mov > 0
+})
+console.log(movements);
+
+// Compare with For loop with filter
+const depositsFor = [];
+for (const mov of movements) if (mov > 0) depositsFor.push(mov);
+
+const withdrawals = movements.filter(mov => mov < 0);
+
+ */
+// Reduce
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+
+let balanceFor = 0;
+for (let mov of movements) balanceFor += mov;
+
+// Max value 
+const max = movements.reduce((acc, cur) => cur > acc ? cur : acc);
