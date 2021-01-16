@@ -11,3 +11,6 @@
     * Use to filter an array which satisfy a certain condition
 #### Reduce 
     * Reduce all the array elements down to one single value 
+
+### Chaining Methods
+* Should avoid use methods that mutate the array in the chaining
