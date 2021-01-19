@@ -144,3 +144,11 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * Data Transformation
 * Bank App
 
+## Day 35
+* Glass project
+
+## Day 36
+* Frontend Mentor - Profile card component
+
+## Day 36
+* Bank App

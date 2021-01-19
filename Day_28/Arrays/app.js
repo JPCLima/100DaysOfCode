@@ -61,10 +61,12 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-const displayMovements = function (movs) {
+const displayMovements = function (movs, sort = false) {
     containerMovements.innerHTML = '';
 
-    movs.forEach(function (mov, i) {
+    const movements = sort ? movs.slice().sort((a, b) => a - b) : movs;
+
+    movements.forEach(function (mov, i) {
         const type = mov > 0 ? 'deposit' : 'withdrawal';
 
         const html = `
@@ -82,9 +84,9 @@ const displayMovements = function (movs) {
 
 const user = 'Steven Thomas Williams'; // SDW
 
-const calcDisplayBalance = function (movements) {
-    const balance = movements.reduce((acc, cur) => acc + cur, 0);
-    labelBalance.textContent = `${balance}€`;
+const calcDisplayBalance = function (acc) {
+    acc.balance = acc.movements.reduce((acc, cur) => acc + cur, 0);
+    labelBalance.textContent = `${acc.balance}€`;
 };
 
 
@@ -122,6 +124,14 @@ const createUserNames = function (accs) {
 createUserNames(accounts);
 console.log(accounts);
 
+const updateUI = function (acc) {
+    // Display Balnace
+    displayMovements(acc.movements);
+    // Display movements
+    calcDisplayBalance(acc);
+    // Display Summary
+    calDisplaySummary(acc);
+};
 
 // Evenet handler
 let currentAccount;
@@ -141,16 +151,78 @@ btnLogin.addEventListener('click', (e) => {
         inputLoginUsername.value = inputLoginPin.value = '';
         inputLoginPin.blur();
 
-        // Display Balnace
-        displayMovements(currentAccount.movements);
-        // Display movements
-        calcDisplayBalance(currentAccount.movements)
-        // Display Summary
-        calDisplaySummary(currentAccount);
+        // Update UI
+        updateUI(currentAccount);
 
-        console.log('value');
     }
 });
+
+btnTransfer.addEventListener('click', e => {
+    e.preventDefault();
+    const amount = Number(inputTransferAmount.value);
+    const receiverAcc = accounts.find(acc => acc.username === inputTransferTo.value);
+    console.log(amount, receiverAcc);
+
+    // Clean input
+    inputTransferAmount.value = inputTransferTo.value = '';
+
+    if (amount > 0 &&
+        receiverAcc &&
+        currentAccount.balance >= amount &&
+        receiverAcc?.username !== currentAccount.username) {
+        // Doing the transfer
+        currentAccount.movements.push(-amount);
+        receiverAcc.movements.push(amount);
+
+        // Update UI
+        updateUI(currentAccount);
+
+        // Clean input
+
+    }
+})
+
+btnClose.addEventListener('click', e => {
+    e.preventDefault();
+    console.log('delete');
+
+    if (inputCloseUsername.value === currentAccount.username &&
+        Number(inputClosePin.value) === currentAccount.pin) {
+        const index = accounts.findIndex(acc => acc.username === currentAccount.username);
+        accounts.splice(index, 1);
+
+
+        // Hide UI
+        containerApp.style.opacity = 0;
+    }
+
+    // Clean input
+    inputCloseUsername.value = inputClosePin.value = '';
+
+});
+
+btnLoan.addEventListener('click', function (e) {
+    e.preventDefault();
+    const amount = Number(inputLoanAmount.value);
+
+    if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
+        // Add movement
+        currentAccount.movements.push(amount);
+
+        // Update UI
+        updateUI(currentAccount);
+    }
+
+    inputLoanAmount.value = '';
+});
+
+let sorted = false;
+btnSort.addEventListener('click', (e) => {
+    e.preventDefault();
+    displayMovements(currentAccount.movements, !sorted);
+    sorted = !sorted;
+})
+
 
 
 /////////////////////////////////////////////////
@@ -280,4 +352,23 @@ for (let a of accounts) {
         console.log(a);
     }
 }
- */
+
+
+console.log(movements);
+// Equality
+console.log(movements.includes(-130));
+
+// Conditions
+const anyDeposit = movements.some(mov => mov > 50000);
+console.log(anyDeposit);
+
+// Every
+console.log(movements.every(movements => movements > 0));
+*/
+
+// Creating arrays
+const x = new Array(7);
+console.log(x.fill(2, 3));
+
+const y = Array.from({ length: 5 }, (_, i) => i + 1);
+console.log(y);
