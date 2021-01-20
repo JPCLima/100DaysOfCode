@@ -150,5 +150,12 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 ## Day 36
 * Frontend Mentor - Profile card component
 
-## Day 36
+## Day 37
 * Bank App
+  
+## Day 38
+* Converting and Checking Numbers
+* Working with dates
+* Parsing
+* Finite
+* Max safe integer
