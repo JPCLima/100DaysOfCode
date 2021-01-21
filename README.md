@@ -159,3 +159,7 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * Parsing
 * Finite
 * Max safe integer
+
+## Day 39
+* Taking notes of the arrays methods
+* Praticing the arrays in LetCode
