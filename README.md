@@ -161,5 +161,8 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * Max safe integer
 
 ## Day 39
-* Taking notes of the arrays methods
+* Study arrays methods
 * Praticing the arrays in LetCode
+
+## Day 40
+* Bankist website
