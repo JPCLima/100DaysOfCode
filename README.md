@@ -171,5 +171,11 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 * Taking notes of the arrays methods
 * Practicing css in CSSBattle
 
+## Day 41
+* Taking notes of the arrays methods
+
 ## Day 42
-* Meal API
+* Find Meal Application
+
+## Day 43
+* Find Meal Application
