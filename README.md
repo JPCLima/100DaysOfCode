@@ -179,3 +179,7 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ## Day 43
 * Find Meal Application
+
+## Day 44
+* Read a book "The definitive Guide" 
+* Taking note from the book
