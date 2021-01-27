@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #1cab6d1c;
+    --color-secondary: #1cab6d25;
+    --color-tertiary: #effaf5a2;
+    --color-btn: #1cab6d;
+    --color-bg: #e1fff2;
+    --color--text: #002C3F;
+}
+
+body {
+	background-color: var(--color-bg);
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+/* Circles */
+.circle{
+    position: absolute;
+    background-color: var(--color-primary);
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: 2s circles forwards;
+}
+
+.circle1{
+    top: -400px;
+    left: -200px;
+    transform: translate(-150px, -50px);
+}
+
+.circle2{
+    top: 200px;
+    left: 700px;
+    transform: translate(-150px, -50px);
+    
+}
+
+.circle3{    
+    background-color: var(--color-secondary);
+    width: 500px;
+    height: 500px;
+    top: 350px;
+    left: 800px;
+    transform: translate(150px, -50px);  
+    
+}
+
+/* Animation */
+@keyframes circles{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Glass Container */
+.glass{   
+    position: relative; 
+    background-color: var(--color-secondary);
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.5),rgba(255,255,255, 0.1));
+     border-radius: 2rem;
+     z-index: 3;
+     backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.container-glass{
+    position: absolute;
+    bottom: calc(10% / 2);
+    left: calc(10% / 2);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);   
+    width: 90%;
+    height: 90%;    
+    animation: 2s glass ease-out;
+}
+
+/* Text */
+h1{
+    color: var(--color--text);
+    font-size: 3rem;
+}
+
+p{
+    color: var(--color--text);
+    font-size: 1.5rem;
+}
+
+.rate{
+    position: absolute;
+    left: 50%;
+    color: var(--color-btn);
+    margin: 0px;
+}
+
+
+/* Button */
+.btn {
+    position: absolute;
+    left:15%;
+    color: #fff;
+    background-color: var(--color-btn);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 8px 18px;
+    margin: 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.btn:focus, select:focus, input:focus{
+    outline: none;
+}
+
+.btn:active{
+    box-shadow: 0 0 0px rgba(0,0,0,0.2);
+}
+
+/* Select list */
+
+.currency select {
+    padding: 10px 20px 10px 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.currency input {
+    width: 30%;
+    border: 0;
+    background: transparent;
+    font-size: 1.5rem;
+    padding: 8px;
+    text-align: right;
+}
+
+.swap-rate-container {    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Animation */
+@keyframes glass{
+    0%{
+        opacity: 0;
+        transform: translate(0, 150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
