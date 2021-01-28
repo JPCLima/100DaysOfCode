@@ -186,3 +186,6 @@ To improve my skills I have started the #100DaysOfCode. The aim of this reposito
 
 ## Day 45
 * Converter calculator
+
+## Day 46 
+* Speed typer
