@@ -1,0 +1,155 @@
+url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: orange;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	margin: 0;
+}
+
+.form {
+	padding: 30px 50px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 92%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: orange;
+}
+
+
+.form-control.success input{
+  border-color: #2ecc71;
+}
+
+.form-control.error input{
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  position: absolute;
+  top:35px;
+  right: 20px;
+  visibility: hidden;  
+}
+
+.form-control.success i.fa-check-circle{
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle{
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-control small {	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small{
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form button {
+  background-color: orange;
+  border: 2px solid orange;
+	border-radius: 10px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width:100%; 
+}
+
+.popup{
+  background-color: orange;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;  
+}
+
+.container-popup{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+}
+
+.container-popup button {
+  background-color: #111;
+	border-radius: orange;
+  border: 2px solid orange;
+  color: orange;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  width:100%; 
+}
+
+.popup-success{
+  display: flex;
+}
