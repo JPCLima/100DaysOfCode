@@ -199,3 +199,9 @@ Speech Project
 
 ## Day 49
 * Validation Form
+
+## Day 50 
+* Styles, Attributes Annd Classes
+* Smooth Scrolling
+* Types of Events and Events Handles
+* Continuing working on the Bankist website
