@@ -205,3 +205,6 @@ Speech Project
 * Smooth Scrolling
 * Types of Events and Events Handles
 * Continuing working on the Bankist website
+
+## Day 51
+* Jokes card
